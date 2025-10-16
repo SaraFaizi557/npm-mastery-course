@@ -111,7 +111,7 @@ All exercises include:
 - Expected outcomes
 - Common pitfalls to avoid
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Whether it's:
 - 🐛 Fixing typos or errors
