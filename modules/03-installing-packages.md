@@ -4,7 +4,7 @@
 
 ---
 
-## 📚 Module Overview
+##  Module Overview
 
 Installing packages is at the core of using NPM. This module covers everything you need to know about installing dependencies, from basic installations to advanced options and global packages.
 
