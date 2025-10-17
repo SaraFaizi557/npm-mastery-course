@@ -26,8 +26,6 @@ This course takes you from NPM basics to publishing and maintaining your own pac
 - **Teams** wanting a standardized reference for NPM best practices
 - **Open source contributors** who need to publish and maintain packages
 
-**Prerequisites:** Basic JavaScript knowledge and command-line familiarity.
-
 ## Course Contents
 
 ### Part 1: Foundations
@@ -119,6 +117,7 @@ We welcome contributions from the community! Whether it's:
 - 💡 Adding new examples
 - 🌍 Translating to other languages
 - ✨ Suggesting new topics
+- 🚀 Suggesting new exercises
 
 Please read our **[Contributing Guidelines](CONTRIBUTING.md)** before submitting a pull request.
 
@@ -157,18 +156,11 @@ All code examples and exercises are licensed under the [MIT License](LICENSE-COD
 - Distribute the code
 - Use privately
 
-## Acknowledgments
-
-- The NPM team for creating an amazing package manager
-- The Node.js community for continuous support
-- All contributors who help improve this course
-- Developers worldwide who provide feedback and suggestions
-
 ## Support & Community
 
-- **Questions?** Open an [issue](https://github.com/yourusername/npm-mastery-course/issues)
-- **Discussions:** Join our [Discussions](https://github.com/yourusername/npm-mastery-course/discussions)
-- **Found a bug?** Report it in [Issues](https://github.com/yourusername/npm-mastery-course/issues)
+- **Questions?** Open an [issue](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/issues)
+- **Discussions:** Join our [Discussions](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/discussions)
+- **Found a bug?** Report it in [Issues](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/issues)
 
 
 
@@ -181,8 +173,5 @@ If you find this course helpful, please:
 - 💬 Tell your developer friends
 
 Every star motivates us to improve and expand the course!
-
-
-**Made by the JavaScript community**
 
 **[Start Learning →](modules/01-fundamentals.md)**
