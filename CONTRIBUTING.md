@@ -13,30 +13,15 @@ First off, thank you for considering contributing to the NPM Mastery Course! It'
 
 ## 📜 Code of Conduct
 
-This project adheres to a Code of Conduct that all contributors are expected to follow. By participating, you agree to maintain a respectful, inclusive, and harassment-free environment for everyone.
-
-### Our Standards
-
-**Positive behaviors include:**
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints
-- Accepting constructive criticism gracefully
-- Focusing on what's best for the community
-- Showing empathy towards other community members
-
-**Unacceptable behaviors include:**
-- Harassment, trolling, or insulting comments
-- Personal or political attacks
-- Publishing others' private information
-- Any conduct inappropriate in a professional setting
+This project adheres to a Code of Conduct that all contributors are expected to follow. By participating, you agree to maintain a respectful, inclusive, and harassment-free environment for everyone. see our [Code of Conduct](code_of_conduct.md).
 
 ## 🤝 How Can I Contribute?
 
-There are many ways to contribute to this course:
+There are many ways to contribute to this course, whether you're a beginner or an advanced learner. Here are some suggestions:
 
 ### 1. Report Issues or Suggest Improvements
 
-Found something wrong or have an idea? [Open an issue](https://github.com/yourusername/npm-mastery-course/issues/new)!
+Found something wrong or have an idea? [Open an issue](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/issues/new)!
 
 **For bug reports, include:**
 - Module number and section
@@ -56,6 +41,7 @@ Help make explanations clearer:
 - Improve clarity of explanations
 - Add diagrams or visuals
 - Enhance code examples with comments
+- Suggest new topics or exercises
 
 ### 3. Add Examples
 
@@ -88,15 +74,11 @@ Enhance learning with:
 - Cheat sheets
 - Mind maps or flowcharts
 
-## 🚀 Getting Started
+## Getting Started
 
-### Prerequisites
+To get started, follow these steps:
 
-- A GitHub account
-- Basic knowledge of Git and Markdown
-- Familiarity with NPM (you're learning it here!)
-
-### Setting Up Your Development Environment
+### Setup
 
 1. **Fork the repository**
    - Click the "Fork" button at the top right of the repository page
@@ -120,132 +102,13 @@ Enhance learning with:
 ### Making Changes
 
 1. Make your changes in your feature branch
-2. Test that all markdown renders correctly
+2. Test that all markdown or code renders correctly 
 3. Verify all code examples work
 4. Ensure consistency with existing content
 
-## 📝 Style Guide
+## Style Guide
 
-### Writing Style
-
-**Tone:**
-- Conversational but professional
-- Encouraging and supportive
-- Clear and concise
-- Avoid jargon when possible (or explain it)
-
-**Structure:**
-- Use clear headings (##, ###, ####)
-- Break content into digestible sections
-- Include practical examples
-- Add exercises where appropriate
-
-### Formatting Markdown
-
-**Headers:**
-```markdown
-## Module Title (H2)
-### Major Section (H3)
-#### Subsection (H4)
-```
-
-**Code Blocks:**
-Always specify the language:
-````markdown
-```bash
-npm install express
-```
-
-```javascript
-const express = require('express');
-```
-
-```json
-{
-  "name": "my-package"
-}
-```
-````
-
-**Emphasis:**
-- Use **bold** for important terms or commands
-- Use *italics* for emphasis or references
-- Use `inline code` for commands, file names, and code snippets
-
-**Lists:**
-- Use `-` for unordered lists
-- Use `1.` for ordered lists
-- Indent nested lists with 2 spaces
-
-**Links:**
-```markdown
-[Link Text](URL)
-[Module 1](modules/01-fundamentals.md)
-```
-
-### Code Examples
-
-**Good code examples:**
-```javascript
-// ✅ Good: Clear, commented, complete
-const express = require('express');
-const app = express();
-
-// Simple route
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello World' });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-```
-
-**Avoid:**
-```javascript
-// ❌ Avoid: Incomplete, unclear, no context
-app.get('/', (req, res) => {
-  // ... code here
-});
-```
-
-**Command examples:**
-```bash
-# Always include comments explaining what the command does
-# Install Express as a dependency
-npm install express
-
-# Start development server
-npm run dev
-```
-
-### Exercise Format
-
-Structure exercises consistently:
-```markdown
-**Exercise X.Y - Exercise Title:**
-
-**Objective:** What the learner will accomplish
-
-**Steps:**
-1. First step with clear instructions
-2. Second step
-3. Third step
-
-**Expected Outcome:** What should happen when done correctly
-
-**Common Issues:**
-- Problem 1 and solution
-- Problem 2 and solution
-```
-
-### File Naming Conventions
-
-- Module files: `01-fundamentals.md`, `02-package-json.md`
-- Exercise files: `exercise-01.md`, `exercise-02.md`
-- Example code: `example-express-app/`, `example-package/`
-- Use lowercase and hyphens (kebab-case)
+Please try to stay consistent with the existing format and style of the course. You can find the style guide [here](style_guide.md).
 
 ## 🔄 Submitting Changes
 
@@ -395,16 +258,15 @@ Understanding issue labels:
 
 Contributors will be:
 - Listed in the README
-- Mentioned in release notes
 - Given credit in the relevant modules
 - Forever appreciated by the community! ❤️
 
-## 📞 Questions?
+## Questions?
 
-- **General questions:** Open a [Discussion](https://github.com/yourusername/npm-mastery-course/discussions)
-- **Issues or bugs:** Open an [Issue](https://github.com/yourusername/npm-mastery-course/issues)
+- **General questions:** Open a [Discussion](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/discussions)
+- **Issues or bugs:** Open an [Issue](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/issues)
 - **Need help contributing:** Ask in your Pull Request or Issue
 
 ---
 
-Thank you for contributing to NPM Mastery Course! Together, we're building an amazing learning resource for the JavaScript community. 🚀
+Thank you for contributing to NPM Mastery Course! Together, we're building an amazing learning resource for the JavaScript community. 

@@ -24,7 +24,7 @@ This course takes you from NPM basics to publishing and maintaining your own pac
 - **Beginner developers** who want to understand NPM beyond `npm install`
 - **Intermediate developers** looking to level up their package management skills
 - **Teams** wanting a standardized reference for NPM best practices
-- **Open source contributors** who need to publish and maintain packages
+- **Open source contributors** who are interested in contributing to the NPM ecosystem
 
 ## Course Contents
 
@@ -75,6 +75,8 @@ cd npm-learning
 ## Study Guide
 
 **Recommended Learning Path:**
+
+Take this course at your own pace, no rush. Here's an optional learning path:
 
 - **Week 1** (Foundations): Modules 1-5
   - Focus: Understanding NPM basics and package.json
@@ -128,6 +130,8 @@ Please read our **[Contributing Guidelines](CONTRIBUTING.md)** before submitting
 4. Commit with clear messages (`git commit -m 'Add example for npm workspaces'`)
 5. Push to your fork (`git push origin feature/amazing-addition`)
 6. Open a Pull Request
+
+Feel free to contribute whether you're a beginner or an expert!
 
 ## Contributors
 
