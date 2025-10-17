@@ -4,7 +4,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/npm-mastery-course?style=social)](https://github.com/yourusername/npm-mastery-course)
+[![GitHub Stars](https://img.shields.io/github/stars/Leonardo-Garzon-1995/npm-mastery-course?style=social)](https://github.com/Leonardo-Garzon-1995/npm-mastery-course)
 
 ## What You'll Learn
 
@@ -60,7 +60,7 @@ Browse the modules directly on GitHub starting with [Module 1: NPM Fundamentals]
 
 ### Option 2: Clone and Study Locally
 ```bash
-git clone https://github.com/yourusername/npm-mastery-course.git
+git clone https://github.com/Leonardo-Garzon-1995/npm-mastery-course.git
 cd npm-mastery-course
 ```
 
@@ -182,15 +182,6 @@ If you find this course helpful, please:
 
 Every star motivates us to improve and expand the course!
 
-## 📈 Course Stats
-
-- **15 comprehensive modules**
-- **25+ hands-on exercises**
-- **100+ code examples**
-- **3 complete projects**
-- **Estimated time:** 25-35 hours
-
----
 
 **Made by the JavaScript community**
 
