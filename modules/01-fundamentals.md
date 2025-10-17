@@ -4,7 +4,7 @@
 
 ---
 
-## 📚 Module Overview
+## Module Overview
 
 Welcome to Module 1 of the NPM Mastery Course! This module introduces you to Node Package Manager (NPM), covering what it is, why it's essential, and how to get started with installation and configuration.
 
@@ -449,7 +449,7 @@ npm config list
 
 ## 🏋️ Hands-On Exercises
 
->Go to the [exercises](exercises/01-fundamentals-exercises.md) for this section
+>Go to the [exercises](/exercises/01-fundamentals-exer.md) for this section
 
 ### Exercise 1.1: Installation Verification
 
