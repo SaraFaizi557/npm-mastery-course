@@ -79,3 +79,97 @@ npm list lodash
 - Why did you choose each strategy?
 - What are the tradeoffs?
 - When would you change your strategy?
+
+---
+
+## ⚠️ Common Pitfalls
+
+### Pitfall 1: Using * (Asterisk)
+
+**Problem:**
+```json
+{
+  "dependencies": {
+    "lodash": "*"    // ❌ Dangerous!
+  }
+}
+```
+
+**Why it's bad:**
+- Could install ANY version
+- Breaking changes without warning
+- Unpredictable behavior
+
+**Solution:**
+```json
+{
+  "dependencies": {
+    "lodash": "^4.17.21"    // ✅ Predictable
+  }
+}
+```
+
+### Pitfall 2: Not Understanding ^
+
+**Problem:** Thinking `^4.18.2` means "exactly 4.18.2"
+
+**Reality:**
+- Installs 4.18.2 or higher
+- Up to (but not including) 5.0.0
+- Could be 4.99.99
+
+**Solution:** Understand what you're allowing:
+- Use `^` for regular dependencies (get updates)
+- Use exact versions for critical stability
+
+### Pitfall 3: Mixing Strategies
+
+**Problem:**
+```json
+{
+  "dependencies": {
+    "package-a": "^1.0.0",
+    "package-b": "~2.0.0",
+    "package-c": "3.0.0",
+    "package-d": "*"
+  }
+}
+```
+
+**Why confusing:**
+- No consistent strategy
+- Hard to maintain
+- Unpredictable updates
+
+**Solution:** Pick a strategy and stick to it:
+```json
+{
+  "dependencies": {
+    "package-a": "^1.0.0",
+    "package-b": "^2.0.0",
+    "package-c": "^3.0.0"
+  }
+}
+```
+
+### Pitfall 4: Ignoring Pre-release Versions
+
+**Problem:** Using pre-release in production:
+```json
+{
+  "dependencies": {
+    "react": "18.3.0-next.1"    // ❌ Beta in production!
+  }
+}
+```
+
+**Solution:** Use stable versions in production:
+```json
+{
+  "dependencies": {
+    "react": "^18.2.0"    // ✅ Stable release
+  }
+}
+```
+
+---
