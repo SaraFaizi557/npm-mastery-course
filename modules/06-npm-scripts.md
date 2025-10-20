@@ -825,6 +825,116 @@ npm run quiet    # No NPM output, only webpack output
 ### Exercise 6.5: Real-World Project
 
 **Objective:** Create a complete script workflow for a project.
+---
+
+## ⚠️ Common Pitfalls
+
+### Pitfall 1: Forgetting npm run
+
+**Problem:**
+```bash
+npm dev    # ❌ Won't work
+npm lint   # ❌ Won't work
+npm build  # ❌ Runs npm's build command, not yours!
+```
+
+**Solution:**
+```bash
+npm run dev     # ✅ Correct
+npm run lint    # ✅ Correct
+npm run build   # ✅ Correct
+
+# Only these work without 'run':
+npm start
+npm test
+npm stop
+npm restart
+```
+
+### Pitfall 2: Platform-Specific Commands
+
+**Problem:**
+```json
+{
+  "scripts": {
+    "clean": "rm -rf dist"    // ❌ Doesn't work on Windows
+  }
+}
+```
+
+**Solution:**
+```bash
+# Install cross-platform tools
+npm install --save-dev rimraf
+
+# Use them in scripts
+```
+
+```json
+{
+  "scripts": {
+    "clean": "rimraf dist"    // ✅ Works everywhere
+  }
+}
+```
+
+### Pitfall 3: Long, Unreadable Scripts
+
+**Problem:**
+```json
+{
+  "scripts": {
+    "build": "rm -rf dist && babel src -d dist && webpack --mode production && cp -r public dist"
+  }
+}
+```
+
+**Solution:** Break into smaller scripts:
+```json
+{
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "babel src -d dist",
+    "bundle": "webpack --mode production",
+    "copy": "cp -r public dist",
+    "build": "npm run clean && npm run compile && npm run bundle && npm run copy"
+  }
+}
+```
+
+### Pitfall 4: Not Using Cross-Env
+
+**Problem:**
+```json
+{
+  "scripts": {
+    "start": "NODE_ENV=production node server.js"  // ❌ Fails on Windows
+  }
+}
+```
+
+**Solution:**
+```json
+{
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js"  // ✅ Cross-platform
+  }
+}
+```
+
+### Pitfall 5: Circular Dependencies
+
+**Problem:**
+```json
+{
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "npm run build"  // ❌ Infinite loop!
+  }
+}
+```
+
+**Solution:** Ensure no circular references in your scripts.
 
 ---
 
