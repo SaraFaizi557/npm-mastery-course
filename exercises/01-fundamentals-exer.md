@@ -68,3 +68,68 @@ $ npm --version
 - What's its weekly download count? (check on npmjs.com)
 
 ---
+
+## ⚠️ Common Pitfalls
+
+### Pitfall 1: Permission Errors on Global Install
+
+**Problem:**
+```bash
+$ npm install -g some-package
+npm ERR! Error: EACCES: permission denied
+```
+
+**Solution:**
+Never use `sudo` with npm! Instead, configure npm to use a different directory:
+
+```bash
+# Create directory for global packages
+mkdir ~/.npm-global
+
+# Configure npm
+npm config set prefix '~/.npm-global'
+
+# Add to PATH (add to ~/.bashrc or ~/.zshrc)
+export PATH=~/.npm-global/bin:$PATH
+
+# Reload shell
+source ~/.bashrc
+```
+
+### Pitfall 2: Outdated NPM Version
+
+**Problem:** Using an old NPM version with newer features.
+
+**Solution:** Regularly update NPM:
+```bash
+npm install -g npm@latest
+```
+
+### Pitfall 3: Wrong Registry
+
+**Problem:** Cannot find packages or slow downloads.
+
+**Solution:** Verify your registry:
+```bash
+npm config get registry
+# Should be: https://registry.npmjs.org/
+
+# Reset if wrong
+npm config set registry https://registry.npmjs.org/
+```
+
+### Pitfall 4: Configuration Conflicts
+
+**Problem:** Settings not being applied.
+
+**Solution:** Check configuration priority:
+```bash
+# View all config sources
+npm config list -l
+
+# Check which config file is being used
+npm config get userconfig
+npm config get globalconfig
+```
+
+---
