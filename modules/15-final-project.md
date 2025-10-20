@@ -18,8 +18,6 @@ This is your capstone project! You'll create, test, document, and publish your o
 - Maintain and version your package
 - Handle user feedback and contributions
 
-**Estimated Time:** 120-180 minutes
-
 ---
 
 ## 15.1 Project Selection
@@ -1089,5 +1087,11 @@ git commit -am "chore: update dependencies"
 npm version patch
 npm publish
 ```
+
+For this last module, there will not be more Hand-On Exercises Section. 
+
+You have made, you got this far! Congratulations!
+
+> If you think you can add some value to this course, please consider [contributing](CONTRIBUTING.md) to it.
 
 ---

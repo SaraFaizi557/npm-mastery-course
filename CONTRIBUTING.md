@@ -1,8 +1,8 @@
 # Contributing to NPM Mastery Course
 
-First off, thank you for considering contributing to the NPM Mastery Course! It's people like you that make this course a great learning resource for the community. 🎉
+First off, thank you for considering contributing to the NPM Mastery Course! It's people like you that make this course a great learning resource for the community. 
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [How Can I Contribute?](#how-can-i-contribute)
@@ -11,11 +11,11 @@ First off, thank you for considering contributing to the NPM Mastery Course! It'
 - [Submitting Changes](#submitting-changes)
 - [Review Process](#review-process)
 
-## 📜 Code of Conduct
+## Code of Conduct
 
 This project adheres to a Code of Conduct that all contributors are expected to follow. By participating, you agree to maintain a respectful, inclusive, and harassment-free environment for everyone. see our [Code of Conduct](code_of_conduct.md).
 
-## 🤝 How Can I Contribute?
+## How Can I Contribute?
 
 There are many ways to contribute to this course, whether you're a beginner or an advanced learner. Here are some suggestions:
 
@@ -110,7 +110,7 @@ To get started, follow these steps:
 
 Please try to stay consistent with the existing format and style of the course. You can find the style guide [here](style_guide.md).
 
-## 🔄 Submitting Changes
+## Submitting Changes
 
 ### Before Submitting
 
@@ -192,7 +192,7 @@ Brief description of changes
 Fixes #(issue number)
 ```
 
-## 👀 Review Process
+## Review Process
 
 ### What Happens After You Submit
 
@@ -217,7 +217,7 @@ Maintainers will check:
 - Engage in constructive discussion
 - Make requested changes promptly
 
-## 🏷️ Issue Labels
+## Issue Labels
 
 Understanding issue labels:
 
@@ -229,7 +229,7 @@ Understanding issue labels:
 - `question` - Further information requested
 - `translation` - Translation work needed
 
-## 🌍 Translation Guidelines
+## Translation Guidelines
 
 ### Starting a Translation
 
@@ -246,7 +246,7 @@ Understanding issue labels:
 - Maintain technical terms where appropriate
 - Include language code in file names: `01-fundamentals-es.md`
 
-## 💡 Tips for Great Contributions
+## Tips for Great Contributions
 
 1. **Start small** - Begin with typo fixes or small improvements
 2. **Read existing content** - Understand the style and tone
@@ -254,12 +254,12 @@ Understanding issue labels:
 4. **Be patient** - Reviews take time
 5. **Have fun** - Enjoy contributing to the community!
 
-## 🎓 Recognition
+## Recognition
 
 Contributors will be:
 - Listed in the README
 - Given credit in the relevant modules
-- Forever appreciated by the community! ❤️
+- Forever appreciated by the community!
 
 ## Questions?
 
