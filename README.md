@@ -12,7 +12,7 @@
 
 ## What You'll Learn
 
-This course takes you from NPM basics to publishing and maintaining your own packages. Perfect for JavaScript developers who want to master package management.
+This course takes you from NPM basics to publishing and maintaining your own packages. Perfect for JavaScript developers who want to fully master package management.
 
 - **Complete NPM fundamentals** - Installation, configuration, and core concepts
 - **Package management** - Installing, updating, and managing dependencies
@@ -55,7 +55,7 @@ This course takes you from NPM basics to publishing and maintaining your own pac
 - **[Module 14: CI/CD with NPM](modules/14-ci-cd.md)** - Integrating NPM into your deployment pipeline
 - **[Module 15: Final Project](modules/15-final-project.md)** - Create and publish your own package
 
-##  Quick Start
+## Quick Start
 
 ### Option 1: Read Online
 Browse the modules directly on GitHub starting with [Module 1: NPM Fundamentals](modules/01-fundamentals.md).
