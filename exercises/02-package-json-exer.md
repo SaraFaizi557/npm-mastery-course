@@ -125,3 +125,89 @@
 - Keywords: express, api, rest, node
 
 **Create the package.json manually or use npm init and then modify it.**
+
+---
+
+## ⚠️ Common Pitfalls
+
+### Pitfall 1: Invalid Package Name
+
+**Problem:**
+```json
+{
+  "name": "My Package"    // ❌ Contains space and capital letters
+}
+```
+
+**Solution:**
+```json
+{
+  "name": "my-package"    // ✅ Lowercase with hyphen
+}
+```
+
+### Pitfall 2: Missing Main File
+
+**Problem:**
+```json
+{
+  "main": "index.js"    // But index.js doesn't exist!
+}
+```
+
+**Solution:** Ensure the main file exists or update the field:
+```json
+{
+  "main": "server.js"    // File that actually exists
+}
+```
+
+### Pitfall 3: Wrong Dependency Type
+
+**Problem:**
+```json
+{
+  "dependencies": {
+    "jest": "^29.5.0"    // ❌ Testing tool in dependencies
+  }
+}
+```
+
+**Solution:**
+```json
+{
+  "devDependencies": {
+    "jest": "^29.5.0"    // ✅ Testing tool in devDependencies
+  }
+}
+```
+
+**Rule of thumb:**
+- **dependencies**: Needed in production
+- **devDependencies**: Only needed for development/testing
+
+### Pitfall 4: Not Specifying Engines
+
+**Problem:** Users install your package with incompatible Node versions.
+
+**Solution:**
+```json
+{
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+```
+
+### Pitfall 5: Publishing Private Code
+
+**Problem:** Accidentally publishing internal company code to public NPM.
+
+**Solution:**
+```json
+{
+  "private": true    // Prevents npm publish
+}
+```
+
+---
