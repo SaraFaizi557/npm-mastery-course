@@ -449,7 +449,7 @@ npm config list
 
 ## 🏋️ Hands-On Exercises
 
->Go to the [exercises](/exercises/01-fundamentals-exer.md) for this section
+>Go to the [exercises](/exercises/01-fundamentals-exer.md) for this section for the full instructions on how to complete each exercise.
 
 ### Exercise 1.1: Installation Verification
 

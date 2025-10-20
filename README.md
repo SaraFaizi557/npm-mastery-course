@@ -1,4 +1,8 @@
-# 📦 NPM Mastery Course
+<div align="center">
+  <img src="logo-main.svg" alt="NPM Mastery Course Logo" width="800"/>
+</div>
+
+---
 
 > A comprehensive, open-source guide to mastering Node Package Manager (NPM) from fundamentals to advanced techniques.
 
@@ -114,12 +118,12 @@ All exercises include:
 ## Contributing
 
 We welcome contributions from the community! Whether it's:
-- 🐛 Fixing typos or errors
-- 📝 Improving explanations
-- 💡 Adding new examples
-- 🌍 Translating to other languages
-- ✨ Suggesting new topics
-- 🚀 Suggesting new exercises
+- Fixing typos or errors
+- Improving explanations
+- Adding new examples
+- Translating to other languages
+- Suggesting new topics
+- Suggesting new exercises
 
 Please read our **[Contributing Guidelines](CONTRIBUTING.md)** before submitting a pull request.
 
@@ -171,10 +175,10 @@ All code examples and exercises are licensed under the [MIT License](LICENSE-COD
 ## Show Your Support
 
 If you find this course helpful, please:
-- ⭐ Star this repository
-- 🐦 Share it on social media
-- 📝 Write about it on your blog
-- 💬 Tell your developer friends
+- Star this repository
+- Share it on social media
+- Write about it on your blog
+- Tell your developer friends
 
 Every star motivates us to improve and expand the course!
 
