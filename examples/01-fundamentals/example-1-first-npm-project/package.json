@@ -1,11 +1,13 @@
 {
   "name": "example-1-first-npm-project",
   "version": "1.0.0",
-  "description": "this is how you first project should look like",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js" 
   },
-  "author": "your-name",
-  "license": "ISC"
+  "keywords": [],
+  "author": "Your Name <your@email.com>",
+  "license": "ISC",
+  "description": "Example of first NPM project" 
 }
