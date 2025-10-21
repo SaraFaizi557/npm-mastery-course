@@ -18,6 +18,8 @@ The `package.json` file is the heart of every NPM project. This module explores 
 
 ## 2.1 Creating package.json
 
+`package.json` describes your project and manages its dependencies, scripts, and metadata.
+
 ### Initializing a New Project
 
 There are two ways to create a package.json:
@@ -123,7 +125,7 @@ Here's a complete example with all important fields:
 
 ### Essential Fields
 
-#### name
+#### <u>name</u>
 The package identifier. Must be unique if publishing to NPM.
 
 **Rules:**
@@ -141,7 +143,8 @@ The package identifier. Must be unique if publishing to NPM.
 ```
 
 #### version
-Semantic version number (MAJOR.MINOR.PATCH)
+Semantic version number (MAJOR.MINOR.PATCH)More about this topic [in module 4](04-semantic-versioning.md).
+
 
 ```json
 {
@@ -152,8 +155,7 @@ Semantic version number (MAJOR.MINOR.PATCH)
 ```
 
 #### description
-Brief description of your package (shown in NPM search)
-
+Brief description of your package (shown in NPM search). 
 ```json
 {
   "description": "A fast and lightweight web framework for Node.js"
@@ -189,8 +191,8 @@ Specifies module system (added in Node 12+)
 
 ```json
 {
-  "type": "commonjs"    // Default: require/module.exports
-  "type": "module"      // ES Modules: import/export
+  "type": "commonjs"    // Default: module.exports/require
+  "type": "module"      // ES Modules: export/import
 }
 ```
 
@@ -712,7 +714,7 @@ Specify which CPU architectures your package supports
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Always Include Essential Fields
 
@@ -862,7 +864,7 @@ Now that you understand package.json thoroughly, you're ready to learn about ins
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [NPM package.json Documentation](https://docs.npmjs.com/cli/v9/configuring-npm/package-json)
 - [Semantic Versioning (semver.org)](https://semver.org/)
@@ -871,11 +873,11 @@ Now that you understand package.json thoroughly, you're ready to learn about ins
 
 ---
 
-## 💬 Discussion
+##  Discussion
 
 Have questions about package.json? Join the discussion:
-- [GitHub Discussions](https://github.com/yourusername/npm-mastery-course/discussions)
-- Found an error? [Open an issue](https://github.com/yourusername/npm-mastery-course/issues)
+- [GitHub Discussions](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/discussions)
+- Found an error? [Open an issue](https://github.com/Leonardo-Garzon-1995/npm-mastery-course/issues)
 
 ---
 
