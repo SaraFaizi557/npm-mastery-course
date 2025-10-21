@@ -40,22 +40,22 @@ No warranties are given. The license may not give you all of the permissions nec
 When using or adapting this course content, please provide attribution like this:
 
 ```
-"NPM Mastery Course" by [Your Name/Organization] is licensed under 
+"NPM Mastery Course" by [Leonardo Garzón] is licensed under 
 CC BY 4.0. To view a copy of this license, visit 
 https://creativecommons.org/licenses/by/4.0/
 ```
 
 **In academic papers:**
 ```
-[Your Name/Organization]. NPM Mastery Course. Licensed under 
+[Leonardo Garzón]. NPM Mastery Course. Licensed under 
 Creative Commons Attribution 4.0 International License. 
 Available at: https://github.com/yourusername/npm-mastery-course
 ```
 
 **On websites:**
 ```html
-<p>Content adapted from <a href="https://github.com/yourusername/npm-mastery-course">
-NPM Mastery Course</a> by [Your Name/Organization], licensed under 
+<p>Content adapted from <a href="https://github.com/Leonardo-Garzon-1995/npm-mastery-course">
+NPM Mastery Course</a> by [Leonardo Garzón], licensed under 
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
 ```
 

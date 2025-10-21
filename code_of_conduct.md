@@ -59,16 +59,6 @@ This Code of Conduct is adapted from:
 - [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
 - Best practices from open source educational projects
 
-## Updates
-
-This Code of Conduct may be updated periodically. We will:
-- Announce major changes in the repository
-- Maintain a history of changes
-- Welcome community feedback on improvements
-
 ---
 
-**Remember:** We're all here to learn and grow together. Let's make this community welcoming, supportive for everyone! 🌟
-
-**Version:** 1.0  
-**Last Updated:** October 2025
+**Remember:** We're all here to learn and grow together. Let's make this community welcoming, supportive for everyone!
