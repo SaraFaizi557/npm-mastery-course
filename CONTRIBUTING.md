@@ -198,7 +198,7 @@ Fixes #(issue number)
 
 1. **Automated Checks** - Markdown linting and link checking
 2. **Maintainer Review** - Usually within 3-5 days
-3. **Discussion** - Maintainers may request changes
+3. **Discussion** - Maintainers may request changes, be patient and open to feedback
 4. **Approval** - Once approved, your PR will be merged!
 
 ### Review Criteria
