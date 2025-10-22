@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 3.1: Basic Package Installation
+## Exercise 3.1: Basic Package Installation
 
 **Objective:** Practice installing packages as dependencies and devDependencies.
 
@@ -32,7 +32,7 @@
 - Why are there so many packages when you only installed 4?
 - What do the ^ symbols mean in the version numbers?
 
-### Exercise 3.2: Global vs Local Installation
+## Exercise 3.2: Global vs Local Installation
 
 **Objective:** Understand the difference between global and local installations.
 
@@ -48,7 +48,7 @@
 - Global nodemon works from any directory
 - Local nodemon only works in the project directory (via npm scripts)
 
-### Exercise 3.3: Installing Specific Versions
+## Exercise 3.3: Installing Specific Versions
 
 **Objective:** Learn to install specific versions and understand version ranges.
 
@@ -70,7 +70,7 @@
 }
 ```
 
-### Exercise 3.4: Complete Project Setup
+## Exercise 3.4: Complete Project Setup
 
 **Objective:** Set up a complete project with proper dependencies.
 
@@ -92,7 +92,7 @@ Create a REST API project with:
 
 **Bonus:** Count how many total packages are in node_modules!
 
-### Exercise 3.5: npm ci Practice
+## Exercise 3.5: npm ci Practice
 
 **Objective:** Understand the difference between npm install and npm ci.
 
@@ -111,7 +111,7 @@ Create a REST API project with:
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
 ### Pitfall 1: Installing Everything Globally
 
@@ -149,7 +149,7 @@ npm install --save-dev jest    # Correct
 npm i -D jest                  # Shorthand
 ```
 
-### Pitfall 3: Committing node_modules
+## Pitfall 3: Committing node_modules
 
 **Problem:**
 ```bash

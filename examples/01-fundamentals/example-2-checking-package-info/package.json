@@ -1,0 +1,21 @@
+{
+  "name": "example-2-checking-package-info",
+  "version": "1.0.0",
+  "description": "This example demonstrates how to research and explore NPM packages before installing them, using various NPM commands and creating a comparison script.",
+  "main": "check-package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "node check-package.js",
+    "view-express": "npm view express",
+    "view-axios": "npm view axios",
+    "compare": "npm view express version && npm view axios version"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "research",
+    "tutorial"
+  ],
+  "author": "Leonardo Garzón",
+  "license": "MIT"
+}
