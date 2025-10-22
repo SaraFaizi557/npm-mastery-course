@@ -421,7 +421,7 @@ node_modules/
 
 ### Should You Commit node_modules?
 
-**❌ NO!** Never commit node_modules to Git.
+**NO!** Never commit node_modules to Git.
 
 **Instead:**
 1. Add to .gitignore:
@@ -464,15 +464,15 @@ npm ci
 ### When to Use npm ci
 
 **Use npm ci when:**
-- ✅ In CI/CD pipelines
-- ✅ Deploying to production
-- ✅ You want reproducible builds
-- ✅ You want to ensure exact versions
+- In CI/CD pipelines
+- Deploying to production
+- You want reproducible builds
+- You want to ensure exact versions
 
 **Use npm install when:**
-- ✅ In development
-- ✅ Adding new packages
-- ✅ Updating packages
+- In development
+- Adding new packages
+- Updating packages
 
 **Example in CI/CD:**
 ```yaml
@@ -586,7 +586,7 @@ npm ci --omit=dev
 
 ---
 
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 >Go to the [exercises](/exercises/03-installing-packages-exer.md) for this section
 
@@ -610,100 +610,10 @@ npm ci --omit=dev
 
 **Objective:** Understand the difference between npm install and npm ci.
 
----
-
-## Common Pitfalls
-
-### Pitfall 1: Installing Everything Globally
-
-**Problem:**
-```bash
-npm install -g express mongoose react
-```
-
-**Why it's bad:**
-- Can't track project dependencies
-- Version conflicts between projects
-- Team members won't have same versions
-
-**Solution:**
-```bash
-# Install locally (in project)
-npm install express mongoose react
-```
-
-### Pitfall 2: Forgetting --save-dev
-
-**Problem:**
-```bash
-npm install jest    # Installs as regular dependency
-```
-
-**Why it's bad:**
-- Testing tools in production
-- Larger production builds
-- Unnecessary dependencies
-
-**Solution:**
-```bash
-npm install --save-dev jest    # Correct
-npm i -D jest                  # Shorthand
-```
-
-### Pitfall 3: Committing node_modules
-
-**Problem:**
-```bash
-git add .
-git commit -m "Add dependencies"
-# Commits huge node_modules folder!
-```
-
-**Solution:**
-```bash
-# Add to .gitignore FIRST
-echo "node_modules/" >> .gitignore
-
-# Then commit
-git add .gitignore package.json package-lock.json
-git commit -m "Add dependencies"
-```
-
-### Pitfall 4: Permission Errors on Global Install
-
-**Problem:**
-```bash
-npm install -g some-package
-# Error: EACCES: permission denied
-```
-
-**Solution - NEVER use sudo with npm!**
-```bash
-# Configure npm to use different directory
-mkdir ~/.npm-global
-npm config set prefix '~/.npm-global'
-export PATH=~/.npm-global/bin:$PATH
-
-# Add to ~/.bashrc or ~/.zshrc to make permanent
-```
-
-### Pitfall 5: Outdated package-lock.json
-
-**Problem:** Conflicts between package.json and package-lock.json
-
-**Solution:**
-```bash
-# Delete lock file and reinstall
-rm package-lock.json
-npm install
-
-# Or use npm ci to enforce lock file
-npm ci
-```
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. Always Use package-lock.json
 
