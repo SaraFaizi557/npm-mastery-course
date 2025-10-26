@@ -1,0 +1,25 @@
+{
+  "name": "example-05-lockfile-and-ci",
+  "version": "1.0.0",
+  "description": "This example demonstrates the importance of package-lock.json and npm ci for deterministic builds.",
+  "main": "lock-checker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-lock": "node lock-checker.js",
+    "clean": "rm -rf node_modules package-lock.json"
+  },
+  "keywords": [
+    "npm",
+    "ci",
+    "lockfile",
+    "tutorial",
+    "deterministic",
+    "builds"
+  ],
+  "author": "NPM Mastery Course",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "yargs": "^17.7.2"
+  }
+}
