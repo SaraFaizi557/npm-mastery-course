@@ -8,11 +8,13 @@ const colors = {
     yellow:"\x1b[33m",
     blue:"\x1b[34m",
     magenta:"\x1b[35m",
-    red:"\x1b[31m"};
+    red:"\x1b[31m"
+};
 
 function line(c=colors.cyan) {
     console.log(`${c}${"=".repeat(64)}${colors.reset}`);
 }
+
 
 function banner(t) {
     console.log(colors.cyan+colors.bright);
@@ -20,6 +22,8 @@ function banner(t) {
     console.log("║ "+t.padEnd(62," ")+"║");
     console.log("╚"+"═".repeat(62)+"╝"+colors.reset);
 }
+
+banner("hello")
 
 function help() {
     banner("NPM Scripts & Arguments — Help");
