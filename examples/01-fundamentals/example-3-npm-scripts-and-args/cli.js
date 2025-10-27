@@ -1,0 +1,135 @@
+// entry: cli.js (Windows-safe, no shebang)
+const colors = {
+    reset:"\x1b[0m",
+    bright:"\x1b[1m",
+    dim:"\x1b[2m",
+    cyan:"\x1b[36m",
+    green:"\x1b[32m",
+    yellow:"\x1b[33m",
+    blue:"\x1b[34m",
+    magenta:"\x1b[35m",
+    red:"\x1b[31m"
+};
+
+function line(c=colors.cyan) {
+    console.log(`${c}${"=".repeat(64)}${colors.reset}`);
+}
+
+
+function banner(t) {
+    console.log(colors.cyan+colors.bright);
+    console.log("╔"+"═".repeat(62)+"╗");
+    console.log("║ "+t.padEnd(62," ")+"║");
+    console.log("╚"+"═".repeat(62)+"╝"+colors.reset);
+}
+
+banner("hello")
+
+function help() {
+    banner("NPM Scripts & Arguments — Help");
+    console.log(`${colors.yellow}Usage:${colors.reset}`);
+    console.log("  node cli.js [--name=<NAME>]");
+    console.log("  node cli.js --sum <numbers...>");
+    console.log("  node cli.js --mul <numbers...>");
+    console.log("  node cli.js --env");
+    console.log("  node cli.js --whoami");
+    console.log("  node cli.js --help");
+    line();
+    console.log(`${colors.yellow}NPM shortcuts:${colors.reset}`);
+    console.log(`  npm run hello         ${colors.dim}# node cli.js --name=Sara${colors.reset}`);
+    console.log(`  npm run sum           ${colors.dim}# node cli.js --sum 3 9 12${colors.reset}`);
+    console.log(`  npm run mul           ${colors.dim}# node cli.js --mul 3 4 5${colors.reset}`);
+    console.log("  npm start -- --name=Mohid");console.log(`  npm run lifecycle     ${colors.dim}# shows npm_lifecycle_event & npm_package_*${colors.reset}`);
+    line();
+}
+
+function parseArgs(argv) {
+    const raw=argv.slice(2);
+    const flags={};
+    const pos=[];
+    for(const a of raw){
+        if(a.startsWith("--")&&a.includes("=")) {
+            const[k,v]=a.slice(2).split("=");
+            flags[k]=v;
+        }else if(a.startsWith("--")) {
+            flags[a.slice(2)]=true;
+        }else {
+            pos.push(a);}
+    }return {raw,flags,positionals:pos};
+}
+
+function asNumbers(arr) {
+    const n=arr.map(Number);
+    const ok=n.length>0&&n.every(Number.isFinite);
+    
+    return ok?n:null;
+}
+
+function showEnv() {
+    banner("npm environment snapshot");
+    const out = {
+        npm_lifecycle_event:process.env.npm_lifecycle_event,
+        npm_package_name:process.env.npm_package_name,
+        npm_package_version:process.env.npm_package_version,
+        node:process.version
+    };
+    console.log(out);
+    line();
+}
+
+function whoAmI(){
+    banner("Who Am I");
+    console.log(`${colors.green}Platform:${colors.reset} ${process.platform}`);
+    console.log(`${colors.green}Node:${colors.reset} ${process.version}`);
+    console.log(`${colors.green}CWD:${colors.reset} ${process.cwd()}`);
+    line();
+}
+
+function greet(name) {
+    banner("Greeter");
+    console.log(`${colors.green}Hello, ${name}!${colors.reset} 👋`);
+    console.log(`${colors.dim}(Tip: try "npm start -- --name=YourName")${colors.reset}`);
+    line();
+}
+function doSum(nums) {
+    banner("Sum Calculator");
+    const total = nums.reduce((a,b)=>a+b,0);
+    console.log(`${colors.blue}Numbers:${colors.reset} ${nums.join(", ")}`);
+    console.log(`${colors.yellow}Total: ${colors.reset}${total}`);
+    line();
+}
+function doMul(nums){
+    banner("Multiply Calculator");
+    const p=nums.reduce((a,b)=>a*b,1);
+    console.log(`${colors.blue}Numbers:${colors.reset} ${nums.join(", ")}`);
+    console.log(`${colors.yellow}Product: ${colors.reset}${p}`);
+    line();
+}
+(function main(){
+    banner("NPM Scripts + CLI Arguments Demo");
+    const{raw,flags,positionals} = parseArgs(process.argv);
+    console.log(`${colors.magenta}Raw args: ${colors.reset}`,raw);
+    line();
+    
+    if(flags.help)return help();
+    if(flags.env)return showEnv();
+    if(flags.whoami)return whoAmI();
+    if(flags.sum) {
+        const nums=asNumbers(positionals);
+        if(!nums){
+            console.log(`${colors.red}Error:${colors.reset} Usage: node cli.js --sum <numbers...>`);
+            return;
+        }
+        
+        return doSum(nums);
+    }
+    if (flags.mul) {
+        const nums = asNumbers(positionals);
+        if(!nums) {
+            console.log(`${colors.red}Error:${colors.reset} Usage: node cli.js --mul <numbers...>`);
+            return;
+        }
+        return doMul(nums);
+    }
+    const name=flags.name||"World";return greet(name);
+})();
