@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 8.1: Exploring the Cache
+## Exercise 8.1: Exploring the Cache
 
 **Objective:** Understand where cache is stored and what it contains.
 
@@ -36,7 +36,7 @@
 
 **Expected Outcome:** Understanding of cache location and contents.
 
-### Exercise 8.2: Cache Performance Test
+## Exercise 8.2: Cache Performance Test
 
 **Objective:** See how cache improves installation speed.
 
@@ -66,7 +66,7 @@
 
 **Expected Outcome:** Cached installation is significantly faster.
 
-### Exercise 8.3: Offline Installation
+## Exercise 8.3: Offline Installation
 
 **Objective:** Test installing packages without internet.
 
@@ -108,7 +108,7 @@
 
 **Expected Outcome:** Successful installation while offline.
 
-### Exercise 8.4: Cache Troubleshooting
+## Exercise 8.4: Cache Troubleshooting
 
 **Objective:** Practice fixing cache-related issues.
 
@@ -143,7 +143,7 @@
 
 **Expected Outcome:** Successfully troubleshoot and fix issues.
 
-### Exercise 8.5: Cache Maintenance Routine
+## Exercise 8.5: Cache Maintenance Routine
 
 **Objective:** Create a cache maintenance routine.
 
@@ -170,9 +170,9 @@ echo "Cache Maintenance Starting..."
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Cleaning Cache Too Often
+## Pitfall 1: Cleaning Cache Too Often
 
 **Problem:**
 ```json
@@ -198,7 +198,7 @@ echo "Cache Maintenance Starting..."
 }
 ```
 
-### Pitfall 2: Ignoring Cache Errors
+## Pitfall 2: Ignoring Cache Errors
 
 **Problem:**
 ```
@@ -221,7 +221,7 @@ npm cache clean --force
 npm install
 ```
 
-### Pitfall 3: Not Using Cache in CI/CD
+## Pitfall 3: Not Using Cache in CI/CD
 
 **Problem:**
 ```yaml
@@ -242,7 +242,7 @@ npm install
 - run: npm ci
 ```
 
-### Pitfall 4: Assuming Clean Cache Fixes Everything
+## Pitfall 4: Assuming Clean Cache Fixes Everything
 
 **Problem:**
 ```bash
@@ -263,7 +263,7 @@ npm cache verify
 # Clean cache only if cache-related
 ```
 
-### Pitfall 5: Not Monitoring Cache Size
+## Pitfall 5: Not Monitoring Cache Size
 
 **Problem:**
 ```bash
