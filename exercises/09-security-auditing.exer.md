@@ -1,4 +1,4 @@
-# 🏋️ Hands-On Exercises
+#  Hands-On Exercises
 
 ## Exercise 9.1: Running Your First Audit
 
@@ -153,7 +153,7 @@
 
 ---
 
-# ⚠️ Common Pitfalls
+#  Common Pitfalls
 
 ## Pitfall 1: Ignoring Low Severity Vulnerabilities
 
