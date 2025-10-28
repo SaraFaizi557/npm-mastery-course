@@ -1,4 +1,4 @@
-# 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
 ## Exercise 11.1: Create a Workspace
 
@@ -180,7 +180,7 @@
 
 ---
 
-# ⚠️ Common Pitfalls
+# Common Pitfalls
 
 ## Pitfall 1: Forgetting to Make Workspaces Private
 
