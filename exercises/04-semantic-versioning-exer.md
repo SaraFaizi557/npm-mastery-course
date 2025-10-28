@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 4.1: Understanding Version Numbers
+## Exercise 4.1: Understanding Version Numbers
 
 **Objective:** Identify what type of change each version bump represents.
 
@@ -21,7 +21,7 @@
 5. MINOR (new feature)
 6. MAJOR (breaking change)
 
-### Exercise 4.2: Version Ranges Practice
+## Exercise 4.2: Version Ranges Practice
 
 **Objective:** Understand what versions are allowed by different symbols.
 
@@ -48,7 +48,7 @@ npm install lodash@~4.17.20
 npm list lodash
 ```
 
-### Exercise 4.3: Comparing Caret vs Tilde
+## Exercise 4.3: Comparing Caret vs Tilde
 
 **Objective:** See the practical difference between ^ and ~.
 
@@ -64,7 +64,7 @@ npm list lodash
 - What's in package.json for each?
 - What's the actual installed version?
 
-### Exercise 4.4: Real-World Scenario
+## Exercise 4.4: Real-World Scenario
 
 **Objective:** Choose appropriate version strategies.
 
@@ -82,9 +82,9 @@ npm list lodash
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Using * (Asterisk)
+## Pitfall 1: Using * (Asterisk)
 
 **Problem:**
 ```json
@@ -104,12 +104,12 @@ npm list lodash
 ```json
 {
   "dependencies": {
-    "lodash": "^4.17.21"    // ✅ Predictable
+    "lodash": "^4.17.21"    // ✅ Predictable behavior
   }
 }
 ```
 
-### Pitfall 2: Not Understanding ^
+## Pitfall 2: Not Understanding ^
 
 **Problem:** Thinking `^4.18.2` means "exactly 4.18.2"
 
@@ -122,7 +122,7 @@ npm list lodash
 - Use `^` for regular dependencies (get updates)
 - Use exact versions for critical stability
 
-### Pitfall 3: Mixing Strategies
+## Pitfall 3: Mixing Strategies
 
 **Problem:**
 ```json
@@ -152,7 +152,7 @@ npm list lodash
 }
 ```
 
-### Pitfall 4: Ignoring Pre-release Versions
+## Pitfall 4: Ignoring Pre-release Versions
 
 **Problem:** Using pre-release in production:
 ```json

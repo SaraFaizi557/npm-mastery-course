@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 5.1: Understanding Lock Files
+## Exercise 5.1: Understanding Lock Files
 
 **Objective:** See how package-lock.json is created and used.
 
@@ -36,7 +36,7 @@
 - How many total packages were installed?
 - Did reinstalling give you the same versions?
 
-### Exercise 5.2: npm install vs npm ci
+## Exercise 5.2: npm install vs npm ci
 
 **Objective:** Compare the behavior of npm install and npm ci.
 
@@ -79,7 +79,7 @@
 - npm ci fails when package.json doesn't match lock file
 - npm install updates the lock file
 
-### Exercise 5.3: Resolving Lock File Conflicts
+## Exercise 5.3: Resolving Lock File Conflicts
 
 **Objective:** Practice handling lock file merge conflicts.
 
@@ -127,7 +127,7 @@
 
 **Learning:** Never manually edit package-lock.json conflicts!
 
-### Exercise 5.4: Lock File Verification
+## Exercise 5.4: Lock File Verification
 
 **Objective:** Understand integrity checking.
 
@@ -153,9 +153,9 @@
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Not Committing Lock File
+## Pitfall 1: Not Committing Lock File
 
 **Problem:**
 ```bash
@@ -174,7 +174,7 @@ git add package-lock.json
 git commit -m "Lock dependency versions"
 ```
 
-### Pitfall 2: Manually Editing Lock File
+## Pitfall 2: Manually Editing Lock File
 
 **Problem:**
 ```json
@@ -189,7 +189,7 @@ git commit -m "Lock dependency versions"
 
 **Solution:** Always use npm commands to modify dependencies.
 
-### Pitfall 3: Using npm install in CI/CD
+## Pitfall 3: Using npm install in CI/CD
 
 **Problem:**
 ```yaml
@@ -208,7 +208,7 @@ git commit -m "Lock dependency versions"
 - run: npm ci  # ✅ Correct!
 ```
 
-### Pitfall 4: Ignoring Lock File in .gitignore
+## Pitfall 4: Ignoring Lock File in .gitignore
 
 **Problem:**
 ```
@@ -229,7 +229,7 @@ node_modules/
 # Don't ignore package-lock.json!
 ```
 
-### Pitfall 5: Not Updating Lock File
+## Pitfall 5: Not Updating Lock File
 
 **Problem:**
 ```bash

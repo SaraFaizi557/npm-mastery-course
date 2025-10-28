@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 7.1: Exploring Installed Packages
+## Exercise 7.1: Exploring Installed Packages
 
 **Objective:** Learn to view and understand your dependencies.
 
@@ -30,7 +30,7 @@
 
 **Expected Outcome:** Understanding of dependency structure.
 
-### Exercise 7.2: Checking for Updates
+## Exercise 7.2: Checking for Updates
 
 **Objective:** Learn to identify outdated packages.
 
@@ -54,7 +54,7 @@
 
 **Expected Outcome:** Understanding version update options.
 
-### Exercise 7.3: Updating Packages
+## Exercise 7.3: Updating Packages
 
 **Objective:** Practice different update methods.
 
@@ -75,7 +75,7 @@
 
 **Expected Outcome:** Understanding of update behavior.
 
-### Exercise 7.4: Removing and Cleaning
+## Exercise 7.4: Removing and Cleaning
 
 **Objective:** Practice removing packages and cleaning up.
 
@@ -97,7 +97,7 @@
 
 **Expected Outcome:** Understanding cleanup commands.
 
-### Exercise 7.5: Real-World Maintenance
+## Exercise 7.5: Real-World Maintenance
 
 **Objective:** Perform a complete maintenance routine.
 
@@ -124,9 +124,9 @@ npm list --depth=0 >> after.txt
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Updating Without Testing
+## Pitfall 1: Updating Without Testing
 
 **Problem:**
 ```bash
@@ -150,7 +150,7 @@ npm run build         # Verify build works
 git commit -am "Update dependencies"
 ```
 
-### Pitfall 2: Forgetting to Update package-lock.json
+## Pitfall 2: Forgetting to Update package-lock.json
 
 **Problem:**
 ```bash
@@ -172,7 +172,7 @@ git add package.json package-lock.json
 git commit -m "Update dependencies"
 ```
 
-### Pitfall 3: Removing Package from package.json Only
+## Pitfall 3: Removing Package from package.json Only
 
 **Problem:**
 ```json
@@ -197,7 +197,7 @@ npm uninstall lodash
 npm prune
 ```
 
-### Pitfall 4: Not Checking Why Package is Installed
+## Pitfall 4: Not Checking Why Package is Installed
 
 **Problem:**
 ```bash
@@ -214,7 +214,7 @@ npm ls lodash
 # Don't remove if it's a sub-dependency
 ```
 
-### Pitfall 5: Blindly Updating to Latest
+## Pitfall 5: Blindly Updating to Latest
 
 **Problem:**
 ```bash

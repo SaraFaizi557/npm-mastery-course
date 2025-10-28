@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 2.1: Create a Basic Package.json
+## Exercise 2.1: Create a Basic Package.json
 
 **Objective:** Create a package.json file with proper configuration.
 
@@ -20,7 +20,7 @@
 
 **Bonus:** Try `npm init -y` in a new directory and compare the results.
 
-### Exercise 2.2: Customize Package.json
+## Exercise 2.2: Customize Package.json
 
 **Objective:** Manually edit and understand package.json fields.
 
@@ -73,7 +73,7 @@
 }
 ```
 
-### Exercise 2.3: Dependencies Practice
+## Exercise 2.3: Dependencies Practice
 
 **Objective:** Understand different dependency types.
 
@@ -101,7 +101,7 @@
 }
 ```
 
-### Exercise 2.4: Complete Package Configuration
+## Exercise 2.4: Complete Package Configuration
 
 **Objective:** Create a production-ready package.json for a REST API.
 
@@ -128,9 +128,9 @@
 
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Invalid Package Name
+## Pitfall 1: Invalid Package Name
 
 **Problem:**
 ```json
@@ -146,7 +146,7 @@
 }
 ```
 
-### Pitfall 2: Missing Main File
+## Pitfall 2: Missing Main File
 
 **Problem:**
 ```json
@@ -162,7 +162,7 @@
 }
 ```
 
-### Pitfall 3: Wrong Dependency Type
+## Pitfall 3: Wrong Dependency Type
 
 **Problem:**
 ```json
@@ -186,7 +186,7 @@
 - **dependencies**: Needed in production
 - **devDependencies**: Only needed for development/testing
 
-### Pitfall 4: Not Specifying Engines
+## Pitfall 4: Not Specifying Engines
 
 **Problem:** Users install your package with incompatible Node versions.
 
@@ -199,7 +199,7 @@
 }
 ```
 
-### Pitfall 5: Publishing Private Code
+## Pitfall 5: Publishing Private Code
 
 **Problem:** Accidentally publishing internal company code to public NPM.
 

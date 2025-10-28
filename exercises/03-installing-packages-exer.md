@@ -113,7 +113,7 @@ Create a REST API project with:
 
 # Common Pitfalls
 
-### Pitfall 1: Installing Everything Globally
+## Pitfall 1: Installing Everything Globally
 
 **Problem:**
 ```bash
@@ -131,7 +131,7 @@ npm install -g express mongoose react
 npm install express mongoose react
 ```
 
-### Pitfall 2: Forgetting --save-dev
+## Pitfall 2: Forgetting --save-dev
 
 **Problem:**
 ```bash
@@ -168,7 +168,7 @@ git add .gitignore package.json package-lock.json
 git commit -m "Add dependencies"
 ```
 
-### Pitfall 4: Permission Errors on Global Install
+## Pitfall 4: Permission Errors on Global Install
 
 **Problem:**
 ```bash
@@ -186,7 +186,7 @@ export PATH=~/.npm-global/bin:$PATH
 # Add to ~/.bashrc or ~/.zshrc to make permanent
 ```
 
-### Pitfall 5: Outdated package-lock.json
+## Pitfall 5: Outdated package-lock.json
 
 **Problem:** Conflicts between package.json and package-lock.json
 

@@ -1,6 +1,6 @@
-## 🏋️ Hands-On Exercises
+# Hands-On Exercises
 
-### Exercise 6.1: Basic Scripts
+## Exercise 6.1: Basic Scripts
 
 **Objective:** Create and run basic NPM scripts.
 
@@ -39,7 +39,7 @@
 
 **Expected Outcome:** Each script runs successfully and displays the expected output.
 
-### Exercise 6.2: Pre and Post Hooks
+## Exercise 6.2: Pre and Post Hooks
 
 **Objective:** Use pre and post hooks to create a workflow.
 
@@ -48,13 +48,13 @@
    ```json
    {
      "scripts": {
-       "prebuild": "echo '🧹 Cleaning...'",
-       "build": "echo '🔨 Building...'",
-       "postbuild": "echo '✅ Build complete!'",
+       "prebuild": "echo ' Cleaning...'",
+       "build": "echo ' Building...'",
+       "postbuild": "echo ' Build complete!'",
        
-       "pretest": "echo '🔍 Linting...'",
-       "test": "echo '🧪 Testing...'",
-       "posttest": "echo '✅ Tests passed!'"
+       "pretest": "echo ' Linting...'",
+       "test": "echo ' Testing...'",
+       "posttest": "echo ' Tests passed!'"
      }
    }
    ```
@@ -72,7 +72,7 @@
 - Did you need to call prebuild and postbuild separately?
 - How could this be useful in real projects?
 
-### Exercise 6.3: Chaining Scripts
+## Exercise 6.3: Chaining Scripts
 
 **Objective:** Create complex workflows by chaining scripts.
 
@@ -117,7 +117,7 @@
 
 **Expected Outcome:** Chained scripts run in order, stopping if any fail.
 
-### Exercise 6.4: Environment Variables
+## Exercise 6.4: Environment Variables
 
 **Objective:** Use environment variables in scripts.
 
@@ -157,7 +157,7 @@
 
 **Expected Outcome:** Different environment variables are set for each script.
 
-### Exercise 6.5: Real-World Project
+## Exercise 6.5: Real-World Project
 
 **Objective:** Create a complete script workflow for a project.
 
@@ -187,13 +187,11 @@ Set up scripts for a Node.js/Express project that includes:
 }
 ```
 
-**Bonus:** Add pre and post hooks to create an automated workflow.
-
 ---
 
-## ⚠️ Common Pitfalls
+# Common Pitfalls
 
-### Pitfall 1: Forgetting npm run
+## Pitfall 1: Forgetting npm run
 
 **Problem:**
 ```bash
@@ -215,7 +213,7 @@ npm stop
 npm restart
 ```
 
-### Pitfall 2: Platform-Specific Commands
+## Pitfall 2: Platform-Specific Commands
 
 **Problem:**
 ```json
@@ -266,7 +264,7 @@ npm install --save-dev rimraf
 }
 ```
 
-### Pitfall 4: Not Using Cross-Env
+## Pitfall 4: Not Using Cross-Env
 
 **Problem:**
 ```json
@@ -286,7 +284,7 @@ npm install --save-dev rimraf
 }
 ```
 
-### Pitfall 5: Circular Dependencies
+## Pitfall 5: Circular Dependencies
 
 **Problem:**
 ```json
