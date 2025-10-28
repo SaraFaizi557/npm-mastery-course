@@ -89,12 +89,7 @@ To get started, follow these steps:
    cd npm-mastery-course
    ```
 
-3. **Add the upstream repository**
-   ```bash
-   git remote add upstream https://github.com/yourusername/npm-mastery-course.git
-   ```
-
-4. **Create a branch**
+3. **Create a branch**
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -204,11 +199,11 @@ Fixes #(issue number)
 ### Review Criteria
 
 Maintainers will check:
-- ✅ Accuracy of information
-- ✅ Consistency with existing content
-- ✅ Code examples work as described
-- ✅ Follows style guide
-- ✅ Adds value to learners
+-  Accuracy of information
+-  Consistency with existing content
+-  Code examples work as described
+-  Follows style guide
+-  Adds value to learners
 
 ### Feedback
 
@@ -216,18 +211,6 @@ Maintainers will check:
 - Be open to feedback and suggestions
 - Engage in constructive discussion
 - Make requested changes promptly
-
-## Issue Labels
-
-Understanding issue labels:
-
-- `good first issue` - Great for newcomers
-- `help wanted` - Looking for contributors
-- `bug` - Something isn't working correctly
-- `enhancement` - New feature or improvement
-- `documentation` - Documentation improvements
-- `question` - Further information requested
-- `translation` - Translation work needed
 
 ## Translation Guidelines
 
