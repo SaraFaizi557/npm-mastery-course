@@ -1,4 +1,4 @@
-# 🏋️ Hands-On Exercises
+#  Hands-On Exercises
 
 ## Exercise 12.1: Simulate and Fix Permission Error
 
@@ -163,7 +163,7 @@ echo -e "\nDiagnostics complete"
 
 ---
 
-# ⚠️ Common Pitfalls Summary
+#  Common Pitfalls Summary
 
 ## Top 10 Mistakes to Avoid
 
