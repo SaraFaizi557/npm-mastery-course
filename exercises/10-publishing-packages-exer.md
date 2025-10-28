@@ -1,4 +1,4 @@
-# 🏋️ Hands-On Exercises
+#  Hands-On Exercises
 
 ## Exercise 10.1: Create Your First Package
 
@@ -170,7 +170,7 @@
 
 ---
 
-# ⚠️ Common Pitfalls
+# Common Pitfalls
 
 ## Pitfall 1: Publishing Without Testing
 
