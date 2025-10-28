@@ -1,4 +1,4 @@
-## 🏋️ Hands-On Exercises
+## Hands-On Exercises
 
 ### Exercise 1.1: Installation Verification
 
@@ -69,7 +69,7 @@ $ npm --version
 
 ---
 
-## ⚠️ Common Pitfalls
+## Common Pitfalls
 
 ### Pitfall 1: Permission Errors on Global Install
 

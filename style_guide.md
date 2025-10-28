@@ -61,7 +61,7 @@ const express = require('express');
 
 **Good code examples:**
 ```javascript
-// ✅ Good: Clear, commented, complete
+// Good: Clear, commented, complete
 const express = require('express');
 const app = express();
 
@@ -78,7 +78,7 @@ app.listen(PORT, () => {
 
 **Avoid:**
 ```javascript
-// ❌ Avoid: Incomplete, unclear, no context
+// Avoid: Incomplete, unclear, no context
 app.get('/', (req, res) => {
   // ... code here
 });

@@ -137,12 +137,6 @@ Please read our **[Contributing Guidelines](CONTRIBUTING.md)** before submitting
 
 Feel free to contribute whether you're a beginner or an expert!
 
-## Contributors
-
-Thanks to all the amazing people who have contributed to this course!
-
-<!-- Add contributor list here - GitHub will auto-generate this -->
-
 ## License
 
 ### Course Content
@@ -156,7 +150,7 @@ The course content (markdown files, text) is licensed under [Creative Commons At
 - Attribution — You must give appropriate credit
 
 ### Code Examples
-All code examples and exercises are licensed under the [MIT License](LICENSE-CODE).
+All code examples and exercises are licensed under the [MIT License](./licenses/license_code.md).
 
 **You are free to:**
 - Use the code commercially
